@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+.nav ul {
+  display: flex;
+  max-width: 1300px;
+  gap: 2.1rem;
+  padding: 40px;
+}
+
+.home {
+  display: flex;
+}/*# sourceMappingURL=index.css.map */

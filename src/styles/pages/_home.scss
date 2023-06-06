@@ -1,0 +1,395 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #f8f8f8 20%, #fff 80%);
+
+  .home-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 70%;
+    padding: 0 50px;
+
+    .home-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 25rem;
+      z-index: 3;
+
+      h4 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 450px) {
+          font-size: 1.3rem;
+        }
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin: 25px 0;
+
+        span {
+          color: $color1;
+        }
+
+        @media screen and (max-width: 450px) {
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        font-family: $font2;
+        color: $grey;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        font-family: $font2;
+        gap: 2rem;
+        cursor: pointer;
+
+        .button1 {
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          border-radius: 4px;
+          font-size: 1.2rem;
+          font-weight: 500;
+          padding: 20px 35px;
+          border-color: $color1;
+          color: white;
+          background-color: $color1;
+          box-shadow: 0 10px 15px 0 $color2;
+          transition: all 0.3s;
+
+          &:hover {
+            box-shadow: 0 20px 25px $color2;
+          }
+
+          p {
+            color: white;
+          }
+        }
+
+        .button2 {
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          border-radius: 4px;
+          font-size: 1.2rem;
+          font-weight: 500;
+          padding: 15px 35px;
+          color: white;
+          background-color: black;
+
+          @media screen and (max-width: 500px) {
+            padding: 20px 35px;
+          }
+
+          p {
+            color: white;
+          }
+        }
+
+        @media screen and (max-width: 500px) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      @media screen and (max-width: 850px) {
+        align-items: center;
+      }
+    }
+    @media screen and (max-width: 850px) {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .home-car {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 60%;
+      position: absolute;
+      right: 0;
+      z-index: 2;
+    }
+
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
+  }
+}
+
+.booking {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 50px auto;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  width: 90%;
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 2.7rem;
+    font-weight: 700;
+  }
+
+  .form-car {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: end;
+
+    .form-car-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-family: $font1;
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+
+      i {
+        padding-right: 10px;
+        color: $color1;
+      }
+
+      b {
+        padding-left: 5px;
+        color: $color1;
+      }
+    }
+
+    #write {
+      padding: 15px 30px;
+      border-radius: 5px;
+      border: 1px solid $grey2;
+      color: $grey;
+    }
+
+    .form-car-box-button {
+      input {
+        font-family: $font2;
+        color: white;
+        cursor: pointer;
+        font-size: 1.4rem;
+        background-color: $color1;
+        border: none;
+        box-shadow: 0 10px 15px $color2;
+        padding: 14px 30px;
+        border-radius: 5px;
+        width: 100%;
+        transition: all 0.3s;
+
+        &:hover {
+          box-shadow: 0 12px 25px $color2;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1060px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 730px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.pub-home {
+  background-color: #2d2d2d;
+
+  .pub-component {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      font-family: $font1;
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 25px;
+
+      @media screen and (max-width: 830px) {
+        font-size: 2rem;
+      }
+    }
+
+    h4 {
+      font-weight: 400;
+      font-family: $font1;
+      font-size: 2rem;
+
+      b {
+        color: $color1;
+      }
+
+      @media screen and (max-width: 830px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.why-choose {
+  max-width: 1200px;
+  margin: 200px auto;
+  padding: 0 30px;
+
+  .choose-container {
+    display: flex;
+    flex-direction: column;
+
+    .choose-all {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      align-items: center;
+      margin-top: 100px;
+      padding: 0 50px;
+
+      .choose-text {
+        margin-right: 100px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        h4 {
+          font-size: 1.7rem;
+          margin-bottom: 12px;
+
+          @media screen and (max-width: 850px) {
+            font-size: 1.4rem;
+          }
+        }
+
+        h2 {
+          font-size: 3rem;
+          margin-bottom: 25px;
+
+          @media screen and (max-width: 850px) {
+            font-size: 2rem;
+          }
+        }
+
+        p {
+          font-family: $font2;
+          color: $grey;
+          line-height: 1.5;
+          margin-bottom: 40px;
+          padding-right: 100px;
+
+          @media screen and (max-width: 1000px) {
+            padding: 0 100px;
+          }
+          @media screen and (max-width: 850px) {
+            padding: 0 50px;
+          }
+          @media screen and (max-width: 550px) {
+            padding: 0 20px;
+          }
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          width: fit-content;
+          gap: 0.7rem;
+          border-radius: 4px;
+          font-size: 1.2rem;
+          font-weight: 500;
+          padding: 15px 35px;
+          color: white;
+          background-color: $color1;
+          border: none;
+          box-shadow: 0 10px 15px 0 $color2;
+          cursor: pointer;
+          font-family: $font2;
+          transition: all 0.3s;
+
+          &:hover {
+            box-shadow: 0 20px 25px 0 $color2;
+          }
+        }
+        @media screen and (max-width: 1000px) {
+          margin: 0 auto;
+          align-items: center;
+          text-align: center;
+        }
+      }
+
+      .choose-elements {
+        display: flex;
+        flex-direction: column;
+        gap: 4.5rem;
+        max-width: 44rem;
+
+        .element {
+          display: flex;
+
+          img {
+            width: 100px;
+            margin-right: 40px;
+
+            @media screen and (max-width: 1000px) {
+              margin-bottom: 20px;
+              margin-right: 0;
+            }
+          }
+
+          h4 {
+            font-size: 20px;
+            font-family: $font1;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-family: $font2;
+            color: $grey;
+
+            @media screen and (max-width: 1000px) {
+              padding: 0 50px;
+            }
+          }
+
+          @media screen and (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+        @media screen and (max-width: 1000px) {
+          margin-top: 70px;
+        }
+      }
+
+      @media screen and (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 1000px) {
+        align-items: center;
+      }
+    }
+  }
+}

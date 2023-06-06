@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "font1";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "font2";
+  src: url(../fonts/Rubik-Medium.ttf);
+}
+
+$font1: "font1", sans-serif;
+$font2: "font2", sans-serif;
+
+$color1: rgb(255, 77, 48);
+$color2: rgba(255, 83, 48, 0.35);
+$grey: #706f7b;
+$grey2: #ccd7e6;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: $font2;
+}
+
+h2 {
+  font-family: $font1;
+}
+
+h3 {
+  font-family: $font2;
+}
+
+h4 {
+  font-family: $font2;
+}

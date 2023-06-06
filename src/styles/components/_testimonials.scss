@@ -1,0 +1,130 @@
+.testimonials-compo {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+
+  .testimonials-content {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .testimonials-intro {
+      margin: 0 auto;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h2 {
+        font-weight: 400;
+        font-family: $font1;
+        font-size: 2rem;
+
+        @media screen and (max-width: 500px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      h1 {
+        font-family: $font1;
+        font-weight: 600;
+        font-size: 3rem;
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 500px) {
+          font-size: 1.3rem;
+        }
+      }
+
+      p {
+        font-family: $font2;
+        color: $grey;
+        line-height: 1.5;
+        padding: 0 300px;
+
+        @media screen and (max-width: 975px) {
+          padding: 0 150px;
+        }
+
+        @media screen and (max-width: 5000px) {
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 3rem;
+    width: 100%;
+
+    .testi {
+      background-color: #fff;
+      box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+      padding: 2.5rem;
+      position: relative;
+      width: 50%;
+      display: grid;
+
+      h3 {
+        font-family: $font1;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      .testi-type {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        .testi-name {
+          display: flex;
+          gap: 2rem;
+          margin-top: 3rem;
+
+          img {
+            border-radius: 50%;
+            height: 5rem;
+            width: 5rem;
+          }
+
+          h4 {
+            font-family: $font1;
+            font-size: 1.4rem;
+          }
+
+          p {
+            font-family: $font2;
+            font-size: 1.2rem;
+            font-weight: 300;
+          }
+        }
+
+        .testi-i {
+          bottom: 33px;
+          color: #ff4d30;
+          font-size: 5rem;
+          position: absolute;
+          right: 60px;
+
+          @media screen and (max-width: 975px) {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      @media screen and (max-width: 770px) {
+        width: auto;
+      }
+    }
+
+    @media screen and (max-width: 770px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

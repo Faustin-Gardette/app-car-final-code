@@ -1,0 +1,101 @@
+.faq-content {
+  margin: 150px 0;
+
+  .faq-content-all {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .faq-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-weight: 400;
+        font-family: $font1;
+        font-size: 2rem;
+
+        @media screen and (max-width: 850px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      h1 {
+        font-family: $font2;
+        font-weight: 600;
+        font-size: 3rem;
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 850px) {
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        font-family: $font2;
+        color: #706f7b;
+        line-height: 1.5;
+        padding: 0 300px;
+        text-align: center;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 850px) {
+          padding: 0 150px;
+        }
+
+        @media screen and (max-width: 5500px) {
+          padding: 0 25px;
+        }
+      }
+    }
+
+    .faqs {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 15px 50px;
+      display: flex;
+      flex-direction: column;
+
+      .faq-box {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+
+        .faq-question {
+          align-items: center;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: space-between;
+          padding: 1.8rem 4.5rem;
+          transition: 0.15s ease;
+          font-family: $font1;
+          transition: all 0.3s ease;
+
+          &.open {
+            background-color: $color1;
+            color: white;
+          }
+        }
+        .faq-answer {
+          opacity: 0;
+          max-height: 0;
+          overflow: hidden;
+          color: #706f7b;
+          line-height: 1.6;
+          font-family: $font2;
+          text-align: center;
+          padding: 0 4.5rem;
+          transition: all 0.3s;
+
+          &.open {
+            opacity: 1;
+            max-height: 1000px;
+            padding: 2.8rem 4.5rem;
+          }
+        }
+      }
+    }
+  }
+}

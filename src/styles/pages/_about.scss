@@ -1,0 +1,121 @@
+.about-compo {
+  margin: 200px 0;
+
+  .about-content {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 10rem auto;
+    display: flex;
+    gap: 3rem;
+    justify-items: center;
+    align-items: center;
+
+    .about-img {
+      img {
+        height: 25rem;
+        width: 25rem;
+
+        @media screen and (max-width: 500px) {
+          width: 20rem;
+          height: 20rem;
+        }
+      }
+    }
+
+    .about {
+      .about-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-right: 50px;
+
+        h2 {
+          font-weight: 500;
+          font-size: 1.4rem;
+          margin-bottom: 15px;
+          font-family: $font2;
+          @media screen and (max-width: 500px) {
+            font-size: 1.2rem;
+          }
+        }
+
+        h1 {
+          font-size: 2rem;
+          font-family: $font1;
+          margin-bottom: 30px;
+          @media screen and (max-width: 500px) {
+            font-size: 1.7rem;
+          }
+        }
+
+        p {
+          color: #706f7b;
+          font-weight: 300;
+          font-size: 1rem;
+          font-family: $font2;
+          line-height: 1.4rem;
+          margin-bottom: 50px;
+          line-height: 1.6;
+        }
+        @media screen and (max-width: 1000px) {
+          align-items: center;
+          text-align: center;
+          padding-right: 0;
+          margin: 0 30px;
+        }
+      }
+
+      .about-logo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+
+        img {
+          margin-bottom: 20px;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+
+          h1 {
+            font-size: 3rem;
+            margin-right: 10px;
+
+            @media screen and (max-width: 750px) {
+              font-size: 2rem;
+            }
+          }
+
+          p {
+            color: #706f7b;
+            font-weight: 300;
+            font-size: 1rem;
+            font-family: $font2;
+            padding: 15px;
+          }
+
+          @media screen and (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+          }
+
+          @media screen and (max-width: 700px) {
+            font-size: 0.9rem;
+          }
+        }
+
+        @media screen and (max-width: 1000px) {
+          margin: 0 30px;
+          padding: 0 30px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
